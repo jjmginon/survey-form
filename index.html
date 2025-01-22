@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <meta name="description"
+        content="Provide valuable feedback on our Customer Satisfaction Survey to help us improve services like customer service, product quality, pricing, and delivery.">
+    <meta name="author" content="JJ Ginon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="center">Customer Satisfaction Survey</h1>
+            <p id="description" class="description center">We value your feedback to help us improve our services
+            </p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <fieldset class="personal-information">
+                    <legend class="offscreen">Personal Information</legend>
+                    <p>
+                        <label id="name-label" for="name">Name<span class="clue">(optional)</span></label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                            required>
+                    </p>
+                    <p>
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                            required>
+                    </p>
+                    <p>
+                        <label id="number-label" for="number">Age</label>
+                        <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                            placeholder="Age" required>
+                    </p>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>How satisfied are you with our service?</legend>
+                    <label>
+                        <input name="satisfaction" value="very-satisfied" type="radio" class="input-radio" checked> Very
+                        Satisfied
+                    </label>
+                    <label>
+                        <input name="satisfaction" value="satisfied" type="radio" class="input-radio"> Satisfied
+                    </label>
+                    <label>
+                        <input name="satisfaction" value="neutral" type="radio" class="input-radio"> Neutral
+                    </label>
+                    <label>
+                        <input name="satisfaction" value="dissatisfied" type="radio" class="input-radio"> Dissatisfied
+                    </label>
+                    <label>
+                        <input name="satisfaction" value="very-dissatisfied" type="radio" class="input-radio"> Very
+                        Dissatisfied
+                    </label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>What aspect of our service are you most satisfied with?</legend>
+                    <select id="dropdown" name="satisfaction-aspect" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="customer-service">Customer Service</option>
+                        <option value="product-quality">Product Quality</option>
+                        <option value="pricing">Pricing</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>What aspect of our service could be improved?<span class="clue">(Check all that
+                            apply)</span></legend>
+                    <label>
+                        <input name="improve" value="customer-service" type="checkbox" class="input-checkbox"> Customer
+                        Service
+                    </label>
+                    <label>
+                        <input name="improve" value="product-quality" type="checkbox" class="input-checkbox"> Product
+                        Quality
+                    </label>
+                    <label>
+                        <input name="improve" value="pricing" type="checkbox" class="input-checkbox"> Pricing
+                    </label>
+                    <label>
+                        <input name="improve" value="delivery" type="checkbox" class="input-checkbox"> Delivery
+                    </label>
+                    <label>
+                        <input name="improve" value="website-usability" type="checkbox" class="input-checkbox"> Website
+                        Usability
+                    </label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Your comments and suggestions:</legend>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Type your message here"></textarea>
+                </fieldset>
+                <p class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </p>
+            </form>
+        </main>
+        <footer>
+            <p class="center">Copyright &copy; 2025 XYZ Company</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -23,23 +23,24 @@
                 <fieldset class="personal-information">
                     <legend class="offscreen">Personal Information</legend>
                     <p>
-                        <label id="name-label" for="name">Name<span class="clue">(optional)</span></label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
-                            required>
+                        <label id="name-label" for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Your name" required
+                            title="Please enter your name.">
                     </p>
                     <p>
                         <label id="email-label" for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
-                            required>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email address"
+                            required title="Please enter a valid email address.">
                     </p>
                     <p>
                         <label id="number-label" for="number">Age</label>
                         <input type="number" name="age" id="number" min="10" max="99" class="form-control"
-                            placeholder="Age" required>
+                            placeholder="Your age" required title="Please enter your age (10-99).">
                     </p>
                 </fieldset>
-                <fieldset class="form-group">
-                    <legend>How satisfied are you with our service?</legend>
+                <fieldset class="form-group" aria-describedby="satisfaction-info">
+                    <legend id="satisfaction-scale">How satisfied are you with our service?</legend>
+                    <p id="satisfaction-info">Choose one option from very satisfied to very dissatisfied.</p>
                     <label>
                         <input name="satisfaction" value="very-satisfied" type="radio" class="input-radio" checked> Very
                         Satisfied

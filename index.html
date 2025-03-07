@@ -60,9 +60,10 @@
                     </label>
                 </fieldset>
                 <fieldset class="form-group">
-                    <legend>What aspect of our service are you most satisfied with?</legend>
+                    <legend id="dropdown-label">What aspect of our service are you most satisfied with?</legend>
                     <label for="dropdown" class="offscreen">Please choose an aspect of our service:</label>
-                    <select id="dropdown" name="satisfaction-aspect" class="form-control" required>
+                    <select id="dropdown" name="satisfaction-aspect" class="form-control" required
+                        aria-labelledby="dropdown-label">
                         <option disabled selected value>Select an option</option>
                         <option value="customer-service">Customer Service</option>
                         <option value="product-quality">Product Quality</option>

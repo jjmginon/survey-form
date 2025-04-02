@@ -123,6 +123,11 @@ button {
     background-color: #fefefe;
 }
 
+.required {
+    color: #e63946;
+    font-weight: bold;
+}
+
 .input-radio,
 .input-checkbox {
     display: inline-block;

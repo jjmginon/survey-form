@@ -123,6 +123,11 @@ button {
     background-color: #fefefe;
 }
 
+.satisfaction-info {
+    font-size: 0.9rem;
+    color: #6e7681;
+}
+
 .required {
     color: #e63946;
     font-weight: bold;

@@ -73,6 +73,11 @@ legend {
     margin-bottom: 0.5rem;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #679289;
+}
+
 button {
     border: none;
 }

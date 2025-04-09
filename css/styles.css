@@ -89,6 +89,13 @@ textarea:focus-visible {
     outline: 2px solid #679289;
 }
 
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+    border: 1px solid #e63946;
+    outline: 1px solid #e63946;
+}
+
 .container {
     margin: 3.125rem auto 0 auto;
     padding: 1rem;
